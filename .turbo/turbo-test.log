@@ -1,0 +1,26 @@
+
+> @travel-engine/api@1.0.0 test
+> vitest run
+
+
+[1m[7m[36m RUN [39m[27m[22m [36mv2.1.9 [39m[90mF:/Prompt war/travel-engine/apps/api[39m
+
+ [32m✓[39m tests/routes/updates.test.ts [2m([22m[2m2 tests[22m[2m)[22m[33m 751[2mms[22m[39m
+   [33m[2m✓[22m[39m updates routes[2m > [22mrequires authentication [33m397[2mms[22m[39m
+   [33m[2m✓[22m[39m updates routes[2m > [22mreturns updates and caches the destination feed [33m351[2mms[22m[39m
+ [32m✓[39m tests/routes/itinerary.test.ts [2m([22m[2m4 tests[22m[2m)[22m[33m 1658[2mms[22m[39m
+   [33m[2m✓[22m[39m POST /api/itinerary/generate[2m > [22mreturns 401 without token [33m404[2mms[22m[39m
+   [33m[2m✓[22m[39m POST /api/itinerary/generate[2m > [22mreturns 400 for invalid preferences [33m471[2mms[22m[39m
+   [33m[2m✓[22m[39m POST /api/itinerary/generate[2m > [22mgenerates itinerary for valid request [33m484[2mms[22m[39m
+ [32m✓[39m tests/routes/auth.test.ts [2m([22m[2m3 tests[22m[2m)[22m[33m 1980[2mms[22m[39m
+   [33m[2m✓[22m[39m auth routes[2m > [22mregisters a user [33m438[2mms[22m[39m
+   [33m[2m✓[22m[39m auth routes[2m > [22mlogs in an existing user [33m766[2mms[22m[39m
+   [33m[2m✓[22m[39m auth routes[2m > [22mrejects invalid credentials [33m767[2mms[22m[39m
+ [32m✓[39m tests/routes/chat.test.ts [2m([22m[2m2 tests[22m[2m)[22m[33m 874[2mms[22m[39m
+   [33m[2m✓[22m[39m chat routes[2m > [22mstreams concierge responses over SSE [33m609[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m4 passed[39m[22m[90m (4)[39m
+[2m      Tests [22m [1m[32m11 passed[39m[22m[90m (11)[39m
+[2m   Start at [22m 11:10:51
+[2m   Duration [22m 9.93s[2m (transform 1.73s, setup 0ms, collect 18.31s, tests 5.26s, environment 1ms, prepare 1.22s)[22m
+
